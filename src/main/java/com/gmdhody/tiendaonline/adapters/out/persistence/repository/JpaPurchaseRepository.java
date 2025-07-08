@@ -1,4 +1,7 @@
 package com.gmdhody.tiendaonline.adapters.out.persistence.repository;
 
-public interface JpaPurchaseRepository {
+import com.gmdhody.tiendaonline.adapters.out.persistence.entity.PurchaseEntity;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface JpaPurchaseRepository extends JpaRepository<PurchaseEntity, Long> {
 }

@@ -1,7 +1,6 @@
-package com.gmdhody.tiendaonline.adapters.out.persistence;
+package com.gmdhody.tiendaonline.adapters.out.persistence.entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.GenerationType;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -12,7 +11,7 @@ import lombok.Setter;
 public class ClientEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @cColumn(name = "id")
+    @Column(name = "id")
     private Long id;
 
     @Column(name = "nombre", nullable = false)
